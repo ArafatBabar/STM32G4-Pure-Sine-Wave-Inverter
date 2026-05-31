@@ -99,3 +99,36 @@ Guides:
 
 - Prof. Ketan Bhavsar
 - Prof. Ankit Chauhan
+
+## Design Notes and Lessons Learned
+
+This project was developed as part of an academic power electronics course and represents a significant learning experience for the entire team.
+
+While the system successfully demonstrates the design and implementation of a 1 kW STM32G4-based pure sine wave inverter, the current hardware revision is not without limitations. During development and review, several design decisions were identified that could be improved in future revisions.
+
+Some areas identified for improvement include:
+
+* PCB layout optimization for high-current switching paths.
+* Improved isolation and creepage/clearance considerations in certain sections.
+* Better placement of decoupling and filtering components.
+* Additional protection circuitry and fault handling mechanisms.
+* Improved EMI/EMC design practices.
+* More comprehensive thermal analysis of power-stage components.
+* Further validation of sensing and feedback circuitry under varying operating conditions.
+
+This repository is intentionally published in its current state to document the complete engineering journey, including mistakes, trade-offs, design iterations, and lessons learned.
+
+Engineering progress comes from testing assumptions, identifying weaknesses, and continuously improving designs. Future revisions will incorporate the insights gained from this prototype.
+
+## Known Issues
+
+The current revision contains several areas that will be revisited in future versions:
+
+* Some PCB footprints and placements could be optimized for assembly and serviceability.
+* High-current routing can be further improved to reduce loop inductance.
+* Additional test points would simplify debugging and validation.
+* Certain component selections were driven by availability and academic timelines rather than final production requirements.
+* The control firmware is still under active development and tuning.
+* The design has not yet undergone long-term reliability testing.
+
+These observations are documented to encourage discussion and to help future iterations of the project.
